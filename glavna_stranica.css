@@ -1,0 +1,24 @@
+.slike_filmova{
+    display: flex;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+ img{
+    width:250px;
+    height:250px;
+    margin-right:10px;
+    transition: filter 0.3s ease-in-out;
+}
+img:hover{
+    filter: grayscale(100%);
+}
+#labela_film{
+    font-size:50px;
+    margin-left:50%;
+}
+.cela_strana{
+    font-family:monospace;
+}
+body{
+    background-color: whitesmoke;
+}
