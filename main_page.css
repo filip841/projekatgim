@@ -1,6 +1,6 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: rgba(211, 211, 211, 0.5);
     margin: 0;
     display: flex;
     align-items: center;
@@ -8,44 +8,87 @@ body{
     height: 100vh;
 }
 .login_podaci {
-    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: black;
+    border: 4px solid black;
 }
-.login_podaci {
-    display: block;
-    margin-bottom: 8px;
-}
+
 .login_podaci input {
     width: 100%;
-    padding: 8px;
+    padding: 20px;
     margin-bottom: 16px;
     box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgba(211, 211, 211, 0.5);
 }
-
-.login_podaci {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.RAROG-L{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+    transform: skewX(-10deg);
+    margin-top:30px;
 }
-
-.login_podaci button:hover {
-    background-color: #45a049;
-}
-.login_podaci label{
-    color: black;
-}
-#login{
-    font-size: 25px;
-    margin-left: 40%;
-    margin-bottom:70%;
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #submit{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
     font-size: 18px;
-    position:relative;
-    left:35%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top : 10px;
+    padding-bottom: 10px;
+    cursor:pointer;
+}
+.sing-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+#dont_have_account{
+    word-spacing: 1px;
+    margin-right: 10px;
+}
+a{
+    color:black;
+    font-weight: bold;
+}
+#username, #password{
+    font-weight: bold;
+    font-size: 16px;
+}
+.circle{
+    width:130px;
+    height:130px;
+    background-color: white;
+    border-radius: 50%;
+    overflow:hidden;
+    position: relative;
+    border: 4px solid black;
+    left:33%;
+    top:60px;
+}
+.circle img{
+    width:100px;
+    height:100px;
+    max-width: 100%;
+    max-height: 100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#l1,#l2,#l3{
+    font-size:20px;
 }
