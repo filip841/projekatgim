@@ -11,7 +11,7 @@ singup_link.addEventListener("click",function(event){
     if(email.style.display==="none" || email.style.display === ''){
         email.style.display = 'block';
         submit.textContent = "SIGN UP";
-        tekst.textContent = "Have an account?";
+        tekst.textContent = "Already have an account?";
         singup_link.textContent = "Log in";
     }else{
         email.style.display = "none";
