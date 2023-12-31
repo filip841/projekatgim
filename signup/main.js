@@ -10,6 +10,7 @@ async function fetchCities() {
   try {
     const response = await fetch(api + '/cities/')
     if(response.ok) {
+      //asdasdasd
         const cities = await response.json()
         cities.forEach((city) => {
           const newOption = document.createElement('option')
