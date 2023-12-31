@@ -13,9 +13,8 @@ async function fetchLogin() {
     try {
         const response = await fetch(api + '/login/', {
             method: 'POST',
-            credentials: 'include',
             headers: {
-            'Content-Type': 'application/json'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 username: usernameInput.value,
