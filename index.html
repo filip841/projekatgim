@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rarog | Login</title>
-    <link rel="stylesheet" type="text/css" href="login/styleLOGIN.css">
+    <link rel="stylesheet" type="text/css" href="./login/style.css">
 </head>
 <body>
     <div class="container">
-    <div class="circle">
-        <img src="login/images/logo.png">
-    </div>
-    <div class="login_podaci">
-        <form id="login_forma">
-            <div class ="RAROG-L">
-                <label>RAROG</label>
-            </div>
-            <br>
-            <label for="username" id="l1">Username:</label>
-            <input type="text" id="usernameL" name="username" required>
-            <br>    
-            <label for="password" id="l2">Password:</label>
-            <input type="password" id="passwordL" name="password" required>
-            <br>
-            <div class="submit">
-                <button type="submit" id="submitL">LOG IN</button>
-            </div>
-            <br>
-        </form>
-    </div>
-    <div class="sing-up">
-        <label id="dont_have_account">Don't have an account?</label>
-        <a href= signup.html s="signup-link">Sign up</a>
-    </div>
+        <div class="circle">
+            <img src="login/images/logo.png">
+        </div>
+        <div class="login_podaci">
+            <form id="login-form">
+                <div class ="RAROG-L">
+                    <label>RAROG</label>
+                </div>
+                <br>
+                <label for="username" class="label">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>    
+                <label for="password" class="label">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <div class="submit">
+                    <button type="submit" id="submit">LOG IN</button>
+                </div>
+                <br>
+            </form>
+        </div>
+        <div class="sing-up">
+            <p id="dont_have_account">
+                Don't have an account?
+                <a href="./signup" class="signup-link">Sign up</a>
+            </p>
+        </div>
     </div>
     <script src="login/main.js"></script>
 </body>
