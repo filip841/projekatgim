@@ -5,9 +5,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100dvh;
 }
-.login_podaci {
+.signup_podaci {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -18,7 +18,7 @@ body{
     height: auto;
 }
 
-.login_podaci input {
+.signup_podaci input, #gradovi {
     width: 100%;
     padding: 20px;
     margin-bottom: 16px;
@@ -40,25 +40,29 @@ body{
     justify-content: center;
     align-items: center;
 }
-#submit{
+#submitS{
+    border: none;
     background-color: black;
     color: white;
     font-weight: bold;
     border-radius: 30px;
     font-size: 18px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top : 10px;
-    padding-bottom: 10px;
-    cursor:pointer;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: all 0.15s ease;
 }
-.sing-up{
+
+#submitS:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.log-in{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
 }
-#dont_have_account{
+#have_account{
     word-spacing: 1px;
     margin-right: 10px;
 }
@@ -66,7 +70,7 @@ a{
     color:black;
     font-weight: bold;
 }
-#username, #password{
+#username, #password, #email, #gradovi{
     font-weight: bold;
     font-size: 16px;
 }
