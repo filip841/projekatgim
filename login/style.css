@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     background-color: rgba(211, 211, 211, 0.5);
     margin: 0;
@@ -7,7 +7,7 @@ body{
     justify-content: center;
     height: 100dvh;
 }
-.signup_podaci {
+.login_podaci {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -18,7 +18,7 @@ body{
     height: auto;
 }
 
-.signup_podaci input, #gradovi {
+.login_podaci input {
     width: 100%;
     padding: 20px;
     margin-bottom: 16px;
@@ -26,7 +26,7 @@ body{
     border-radius: 5px;
     background-color: rgba(211, 211, 211, 0.5);
 }
-.RAROG-L{
+.RAROG-L {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,12 +35,12 @@ body{
     transform: skewX(-10deg);
     margin-top:30px;
 }
-.submit{
+.submit {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#submitS{
+#submit {
     border: none;
     background-color: black;
     color: white;
@@ -52,42 +52,47 @@ body{
     transition: all 0.15s ease;
 }
 
-#submitS:hover {
+#submit:hover {
     background-color: rgb(40, 40, 40);
 }
 
-.log-in{
+.sing-up{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
 }
-#have_account{
+
+#dont_have_account {
     word-spacing: 1px;
     margin-right: 10px;
 }
-a{
+
+a {
     color:black;
     font-weight: bold;
 }
-#usernameS, #passwordS, #email, #gradovi{
+
+#username, #password {
     font-weight: bold;
     font-size: 16px;
 }
-.circle{
-    width:130px;
-    height:130px;
+
+.circle {
+    width: 130px;
+    height: 130px;
     background-color: white;
     border-radius: 50%;
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
     border: 4px solid black;
-    left:33%;
-    top:60px;
+    left: 33%;
+    top: 60px;
 }
-.circle img{
-    width:100px;
-    height:100px;
+
+.circle img {
+    width: 100px;
+    height: 100px;
     max-width: 100%;
     max-height: 100%;
     position:absolute;
@@ -95,6 +100,7 @@ a{
     left:50%;
     transform: translate(-50%, -50%);
 }
-#l1,#l2,#l3{
+
+.label {
     font-size:20px;
 }
