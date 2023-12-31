@@ -38,14 +38,14 @@ async function fetchSignUp() {
             email: emailInput.value,
             username: usernameInput.value,
             password: passwordInput.value,
-            city: cityInput.value
+            cityId: cityInput.value
         })
     })
     if(response.ok) {
         const responseParsed = await response.json()
         const { userId } = responseParsed
         // Add the userId to the cookies so you can access it from the other pages
-        document.cookie = `userId=${userId}; max-age=${12 * 60 * 60};`
+        document.cookie = `userId=${userId}; max-age=${12 * 60 * 60}; path=/projekatgim`
         window.location.href = "../home"
     } else {
         //TODO: Add some header on the page to tell the user there has been an error
