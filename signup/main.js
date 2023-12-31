@@ -43,10 +43,10 @@ async function fetchSignUp() {
     })
     if(response.ok) {
         const responseParsed = await response.json()
-        const { id: userId } = responseParsed
+        const { userId } = responseParsed
         // Add the userId to the cookies so you can access it from the other pages
         document.cookie = `userId=${userId}; max-age=${12 * 60 * 60};`
-        window.location.href = "./home"
+        window.location.href = "../home"
     } else {
         //TODO: Add some header on the page to tell the user there has been an error
         console.log('There has been an error')

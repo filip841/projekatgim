@@ -23,7 +23,7 @@ async function fetchLogin() {
         })
         if(response.ok) {
             const responseParsed = await response.json()
-            const { id: userId } = responseParsed
+            const { userId } = responseParsed
             // Add the userId to the cookies so you can access it from the other pages
             document.cookie = `userId=${userId}; max-age=${12 * 60 * 60};`
             window.location.href = "./home"
