@@ -8,7 +8,7 @@ const api = 'https://rarog-django.vercel.app/api'
 
 async function fetchCities() {
   try {
-    const response = await fetch(api + '/cities')
+    const response = await fetch(api + '/cities/')
     if(response.ok) {
         const cities = await response.json()
         cities.forEach((city) => {
@@ -29,8 +29,7 @@ async function fetchCities() {
 
 async function fetchSignUp() {
   try {
-    const response = await fetch(api + '/signup', 
-    {
+    const response = await fetch(api + '/signup/', {
         method: 'POST',
         body: JSON.stringify({
             email: emailInput.value,
