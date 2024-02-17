@@ -1,24 +1,40 @@
-.slike_filmova{
-    display: flex;
-    overflow-x:auto;
-    white-space:nowrap;
-}
- img{
-    width:250px;
-    height:250px;
-    margin-right:10px;
-    transition: filter 0.3s ease-in-out;
-}
-img:hover{
-    filter: grayscale(100%);
-}
-#labela_film{
-    font-size:50px;
-    margin-left:50%;
-}
-.cela_strana{
-    font-family:monospace;
-}
 body{
-    background-color: whitesmoke;
+    background-color: #FFFAE0;
+    font-size: 0px
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.LogoContainer{
+    display:flex;
+    flex-direction: column;
+}
+.logo{
+    height: 140px;
+    width: 200px;
+    margin-top: 20%;
+}
+
+.text1{
+    position: relative;
+    bottom: 30px;
+    left:30px;
+    height: 80px;
+    width: 150px;
+}
+.text2{
+    position: relative;
+    height: 80px;
+    width: 90px;
+    bottom:20px;
+    left:50px;
+}
+.text3{
+    position: relative;
+    height: 80px;
+    width: 100px;
+    left:50px;
+    bottom:40px;
 }

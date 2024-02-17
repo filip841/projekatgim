@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rarog | Sign Up</title>
-    <link rel="stylesheet" type="text/css" href="login/styleSIGNUP.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
     <div class="container">
     <div class="circle">
-        <img src="login/images/logo.png">
+        <img src="./images/logo.png">
     </div>
     <div class="signup_podaci">
-        <form id="signup_forma">
+        <form id="signup-form">
             <div class ="RAROG-L">
                 <label>RAROG</label>
             </div>
             <br>
-            <label for="username" id="l1">Username:</label>
-            <input type="text" id="usernameS" name="username" required>
+            <label for="username" class="label">Username:</label>
+            <input type="text" id="username" name="username" required>
             <br>    
-            <label for="password" id="l2">Password:</label>
-            <input type="password" id="passwordS" name="password" required>
+            <label for="password" class="label">Password:</label>
+            <input type="password" id="password" name="password" required>
             <br>
-            <label for="email" id="l3">Email:</label>
+            <label for="email" class="label">Email:</label>
             <input type="email" id="email" name="email" required>
             <br>
-            <select id="gradovi">
-            </select>
+            <label for="city" class="label">City:</label>
+            <select id="city" name="city" required></select>
             <br>
             <div class="submit">
-                <button type="submit" id="submitS">SIGN UP</button>
+                <button type="submit" id="submit">SIGN UP</button>
             </div>
             <br>
         </form>
     </div>
     <div class="log-in">
         <label id="have_account">Already have an account?</label>
-        <a href = index.html s="login-link">Log in</a>
+        <a href="../" class="login-link">Log in</a>
     </div>
     </div>
-    <script src="login/main.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
