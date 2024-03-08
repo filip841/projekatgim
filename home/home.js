@@ -1,10 +1,6 @@
-const bookLogo = document.getElementById("BookLogo");
-const MovieLogo = document.getElementById("MovieLogo");
-const MusicLogo = document.getElementById("MusicLogo");
-/*bookLogo.addEventListener("click",function(){
-    this.style.filter = "grayscale(100%)";
+const book = document.getElementById("name_10_books");
+const music = document.getElementById("music");
+const movie = document.getElementById("movie");
+book.addEventListener('click',function(){
+    window.location = "/books";
 });
-
-MusicLogo.addEventListener("click",function(){
-    this.style.filter = "grayscale(100%)";
-});*/
